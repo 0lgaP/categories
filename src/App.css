@@ -17,13 +17,14 @@ main {
 
 .container {
   width: 20rem;
-  height: 20rem;
+  height: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 2rem;
-  background-image: url(../src/assets/gplay.png);
+  background-color: rgb(136, 18, 165);
+  background-image: url(../src/assets/brick-wall.png);
 }
 img {
   width: 100%;
@@ -38,7 +39,13 @@ img {
   font-weight: 700;
   border: none;
   color: rgb(195, 166, 219);
-  box-shadow: 0 0 10px 5px rgb(158, 94, 214);
+  box-shadow: 0 5px 10px 5px rgb(158, 94, 214);
+}
+.button:hover {
+  background-color: rgb(166, 155, 177);
+  background-image: url("../src/assets/ru_1.jpeg");
+  color:black
+
 }
 
 .category {
