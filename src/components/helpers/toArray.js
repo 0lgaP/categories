@@ -1,19 +1,19 @@
 const toArray = (strings) => {
 
-let arr = strings.split(",").map(string => string.trim())
+let arr = strings.split(",").map(string => string.trim().toLowerCase())
 return arr;
 
 }
-// console.log(toArray("christmas drag, futuristic/space?, favorite body part, fabulous drag, favorite drag look, cake couture, comedy outfit, patriotic drag, music performance, past era hairstyle, red carpet, hair ball look, jock makeover, money dress, swimsuit, cocktail dress, best drag"))
+
+console.log(toArray("sparkles, tulle, buttons and bows, create three looks based on sports balls; lady baller, basketball wife realness, and balls to the wall eleganza, planet of the capes, frozen eleganza, night of a thousand michelle visages, black wedding, stars & stripes forever, drag family resemblance, the color purple, eleganza extravaganza"))
 
 const index = (arr) => {
   return Math.floor(Math.random() * arr.length)
 }
-// console.log(index([1,2,3]))
-// console.log([1,2,3].length)
+
 const select = (arr) => {
   let index = Math.floor(Math.random() * arr.length)
   return arr[index]
 }
 
-export {select}
+// export {select}
