@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+* {
+  background-color: blueviolet;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  background-color: rgb(136, 18, 165);
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+  border-radius: 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-image: url(../src/assets/brick-wall.png);
+
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  background-image: url(../src/assets/gplay.png);
+}
+img {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  background-color: blueviolet;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  color: rgb(195, 166, 219);
+  box-shadow: 0 0 10px 5px rgb(158, 94, 214);
+}
+
+.category {
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 1.2;
+  color: rgb(195, 166, 219);
+  text-align: center;
+  margin-top: 4rem;
+  background-color: rgb(201, 124, 124, 0);
 }
