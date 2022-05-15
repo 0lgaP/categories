@@ -11,6 +11,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-image: url(../src/assets/brick-wall.png);
 
 }
@@ -19,32 +20,68 @@ main {
   width: 20rem;
   height: 40rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   border-radius: 2rem;
-  background-color: rgb(136, 18, 165);
+  background-color: var(--purple-pl);
   background-image: url(../src/assets/brick-wall.png);
+}
+
+.container-switch {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 2rem;
+  margin-bottom:2rem;
+  background-color: rgba(var(--purple-pl), 0);
+
+}
+
+
+.container-top {
+  align-items: flex-end;
 }
 img {
   width: 100%;
 }
 
 .button {
-  background-color: blueviolet;
+  background-color: var(--blue-lt);
   width: 15rem;
-  height: 5rem;
+  height: 4rem;
   border-radius: 2rem;
   font-size: 2rem;
   font-weight: 700;
   border: none;
-  color: rgb(195, 166, 219);
-  box-shadow: 0 5px 10px 5px rgb(158, 94, 214);
+  color: black;
+  /* border: 4px solid var(--yellow); */
+  box-shadow: 0 9px var(--purple-pl);
+
 }
 .button:hover {
-  background-color: rgb(166, 155, 177);
-  background-image: url("../src/assets/ru_1.jpeg");
-  color:black
+  background-color: var(--purple-pl);
+  background-image: url("../src/assets/button.jpeg");
+  color:black;
+  scale: 0.5;
+  translate: 0.5;
+  box-shadow: 0 9px var(--purple-pl);
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px var(--purple-pl);
+  transform: translateY(4px);
+}
+
+.button-toggle {
+  margin: 2rem;
+  padding: 2rem;
+  align-self: flex-start;
 
 }
 

@@ -11,11 +11,24 @@
 }
 body {
   font-family: "Catamaran", sans-serif;
-  background-color: var(--color-bg);
+  background-color: var(--pink-rd);
   color: var(--color-white);
   line-height: 1.7;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+}
+
+/* css variable declerarion */
+:root {
+  --green: rgb(108, 205, 185);
+  --pink-rl: rgb(255, 190, 203);
+  --pink-rd: rgb(224, 127, 138);
+  --pink-rdd: rgb(206, 91, 104);
+  --pink-pl: rgb(251, 147, 246);
+  --purple-pl: rgb(107,89,163);
+  --blue-lt: rgb(132, 210, 222);
+  --blue-dk: rgb(109, 205, 219);
+  --yellow: rgb(233, 222, 132);
 }
