@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { fullList, noDimeList } from "../components/helpers/data";
 import { select } from "../components/helpers/toArray";
 import Slider from "../components/Slider"
+import Ru from "../assets/rup-removebg-preview.png"
 
 const CategoryList = () => {
   const [category, setCategory] = useState("");
@@ -28,7 +29,7 @@ const CategoryList = () => {
       <Slider toggle={filter} onToggle={includeHandler}/>
         </div>
         <button onClick={selectHandler} className="button">
-          category is ...
+          CATEGORY IS
         </button>
         <div className="category">{category}</div>
       </div>
