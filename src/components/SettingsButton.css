@@ -1,12 +1,12 @@
 .arrow-down__container{
-  background-color: var(--pink-pl);
+  background-color: var(--purple-pl);
   width: 100%;
   height: 4rem;
   border-radius: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .arrow-down {
@@ -14,7 +14,7 @@
   width: 5rem;
   background-color: transparent;
   color: var(--yellow);
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 

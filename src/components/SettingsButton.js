@@ -1,5 +1,5 @@
 import React from 'react'
-import {HiOutlineChevronDoubleDown}from 'react-icons/hi'
+import {FiSettings}from 'react-icons/fi'
 import './SettingsButton.css'
 
 
@@ -7,7 +7,7 @@ import './SettingsButton.css'
 const SettingsButton = (props) => {
   return (
     <div className='arrow-down__container'>
-    <button className='arrow-down' onClick={props.toggle}><HiOutlineChevronDoubleDown /></button>
+    <button className='arrow-down' onClick={props.toggleSettings}><FiSettings/></button>
     </div>
   )
 }

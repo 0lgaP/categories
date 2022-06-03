@@ -13,14 +13,15 @@
   
 }
 body {
+  position: absolute;
   font-family: "Catamaran", sans-serif;
   background-color: var(--purple-pl);
-  color: var(--color-white);
   line-height: 1.7;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  margin-left: 2rem;
 }
 html {
   background-color: var(--purple-pl);
@@ -36,4 +37,6 @@ html {
   --blue-lt: rgb(132, 210, 222);
   --blue-dk: rgb(109, 205, 219);
   --yellow: rgb(233, 222, 132);
+  --yellow-t: rgba(233, 222, 132, 0.5)
 }
+

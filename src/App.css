@@ -3,7 +3,6 @@ main {
   background-color: purple;
   width: 90vw;
   height: 90vh;
-  margin: auto;
   border-radius: 2rem;
   display: flex;
   justify-content: center;
@@ -13,22 +12,6 @@ main {
 
 }
 
-.container {
-  width: 20rem;
-  height: 40rem;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 2rem;
-  background-color: var(--purple-pl);
-  background-image: url(../src/assets/rup-removebg-preview.png);
-  background-repeat: no-repeat;
-  background-position-y: 15rem;
-  background-position-x: -6rem;
-}
 
 .container-switch {
   width: 100%;

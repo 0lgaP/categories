@@ -4,9 +4,9 @@ import CategoryList from './components/CategoryList';
 
 function App() {
   return (
-    <div className="App">
+    <main>
       <CategoryList className="character" />
-    </div>
+    </main>
   );
 }
 

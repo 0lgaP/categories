@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { fullList, noDimeList } from "../components/helpers/data";
 import { select } from "../components/helpers/toArray";
-import Slider from "../components/Slider"
-import Ru from "../assets/rup-removebg-preview.png"
+import SettingsButton from "./SettingsButton";
+import Card from "./UI/Card";
+import SettingsModle from "./UI/SettingsModle"; 
 
 const CategoryList = () => {
   const [category, setCategory] = useState("");
   const [filter, setFilter] = useState(true);
+  const [settings, setSettings] = useState(false)
   console.log(filter)
   const selectHandler = () => {
     if (!filter) {
@@ -17,23 +19,27 @@ const CategoryList = () => {
     return setCategory(selected);
   };
 
-  const includeHandler = () => {
+  const filterHandler = () => {
     setFilter((prev) => !prev);
   };
 
-  return (
-    <main>
-      <div className="container">
-        <div className="container-switch">
+  const settingsHandler = () => {
+    setSettings((prev) => !prev)
+  }
 
-      <Slider toggle={filter} onToggle={includeHandler}/>
-        </div>
+
+  return (
+    <React.Fragment>
+      {settings && (<SettingsModle toggleSettings={settingsHandler} settings={settings} onFilter={filterHandler} filter={filter}/>)}
+      <Card>
+        <SettingsButton toggleSettings={settingsHandler}/>
         <button onClick={selectHandler} className="button">
           CATEGORY IS
         </button>
         <div className="category">{category}</div>
-      </div>
-    </main>
+      </Card>
+      </React.Fragment>
+
   );
 };
 
