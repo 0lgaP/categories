@@ -3,7 +3,7 @@ import { fullList, noDimeList } from "../components/helpers/data";
 import { select } from "../components/helpers/toArray";
 import SettingsButton from "./SettingsButton";
 import Card from "./UI/Card";
-import SettingsModle from "./UI/SettingsModle"; 
+import Settings from "./Settings";
 
 const CategoryList = () => {
   const [category, setCategory] = useState("");
@@ -25,12 +25,13 @@ const CategoryList = () => {
 
   const settingsHandler = () => {
     setSettings((prev) => !prev)
+    setCategory("")
   }
 
 
   return (
     <React.Fragment>
-      {settings && (<SettingsModle toggleSettings={settingsHandler} settings={settings} onFilter={filterHandler} filter={filter}/>)}
+      {settings ? (<Settings toggleSettings={settingsHandler} settings={settings} onFilter={filterHandler} filter={filter}/>) : 
       <Card>
         <SettingsButton toggleSettings={settingsHandler}/>
         <button onClick={selectHandler} className="button">
@@ -38,6 +39,7 @@ const CategoryList = () => {
         </button>
         <div className="category">{category}</div>
       </Card>
+      }
       </React.Fragment>
 
   );

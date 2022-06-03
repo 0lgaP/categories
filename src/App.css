@@ -43,11 +43,12 @@ img {
   border: none;
   color: var(--pink-pl);
   font-family: 'Noto Sans', sans-serif;
-  text-shadow: 3px 2px 1px var(--purple-pl);
+  text-shadow: 3px 2px 1px var(--purple-dk);
+  animation-name: catbutton;
+  animation-duration: 4s;
 
   /* border: 4px solid var(--yellow); */
-  box-shadow: 0 9px var(--purple-pl);
-
+  box-shadow: 0 9px var(--purple-dk);
 }
 .button:hover {
   background-color: var(--purple-pl);
@@ -56,12 +57,12 @@ img {
   text-shadow: 3px 2px 1px var(--pink-rd);
   scale: 0.5;
   translate: 0.5;
-  box-shadow: 0 9px var(--purple-pl);
+  box-shadow: 0 9px var(--purple-dk);
 }
 
 .button:active {
   background-color: #3e8e41;
-  box-shadow: 0 5px var(--purple-pl);
+  box-shadow: 0 5px var(--purple-dk);
   transform: translateY(4px);
 }
 
@@ -70,6 +71,24 @@ img {
   padding: 2rem;
   align-self: flex-start;
 
+}
+
+@keyframes catbutton {
+  0% {
+    background-color: transparent;
+    color: transparent;
+    text-shadow: 3px 2px 1px transparent;
+    box-shadow: 0 9px transparent;
+
+  }
+  100% {
+    background-color: var(--yellow);
+    color: var(--pink-pl);
+    text-shadow: 3px 2px 1px var(--purple-dk);
+    box-shadow: 0 9px var(--purple-dk);
+
+  }
+  
 }
 
 .category {

@@ -19,7 +19,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-
+  animation-name: slider;
+  animation-duration: 4s;
   background-color: var(--green);
   transition: 0.8s;
   border-radius: 1rem;
@@ -66,3 +67,14 @@ input:checked + .slider:before {
   transition: 0.8s;
 }
 
+@keyframes slider {
+  0% {
+    background-color: transparent;
+    color: transparent;
+
+  }
+  100% {
+
+  }
+  
+}

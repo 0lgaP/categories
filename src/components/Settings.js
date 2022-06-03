@@ -1,30 +1,18 @@
 import React from 'react'
-import ReactDom from 'react-dom';
-// import SettingsMenu from './SettingsMenu';
-// import useFilter from './helpers/useFilter';
+import SettingsButton from './SettingsButton';
 import Slider from './Slider';
 import Card from './UI/Card';
+import styles from "./Settings.module.css"
 
-
-const SettingsMenu = (props) => {
-  const {toggle, onToggle} = props
-  return (
-    <Card>
-    <div className="container">
-      <Slider toggle={toggle} onToggle={onToggle}/>
-      <div className="category">Hi</div>
-    </div>
-    </Card>
-  )
-}
 
 const Settings = (props) => {
-  const { filter, includeHandler} = props;
-  // const {filter, includeHandler} = useFilter()
+  const { toggleSettings, settings, onFilter, filter} = props;
   return (
     <React.Fragment>
-      {ReactDom.createPortal(<SettingsMenu toggle={filter} onToggle={includeHandler}/>, document.getElementById('settings-root')
-      )}
+    <Card styles={styles.card}>
+    <SettingsButton toggleSettings={toggleSettings} settings={settings} />
+    <Slider filter={filter} onFilter={onFilter}/>
+    </Card>
     </React.Fragment>
   )
 }
