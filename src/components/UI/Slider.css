@@ -5,6 +5,8 @@
   height: 34px;
   background-color: var(--yellow);
   border-radius: 1rem;
+  animation-name: slider;
+  animation-duration: 4s;
 }
 
 .switch input {
@@ -36,6 +38,8 @@
   background-color: var(--yellow);
   transition: 0.8s;
   border-radius: 1rem;
+  animation-name: slider;
+  animation-duration: 4s;
 }
 
 input:checked + .slider {
@@ -56,16 +60,21 @@ input:checked + .slider:before {
   overflow: hidden;
   word-wrap: break-word;
   white-space: nowrap;
+  animation-name: slider;
+  animation-duration: 4s;
 }
 
 .noRepeats {
   background-color: rgba(0,0,0, 0);
   color: var(--yellow);
+  animation-name: slider;
+  animation-duration: 4s;
   padding-top: 5px;
   padding-left: 50px;
   font-weight:600;
   transition: 0.8s;
 }
+
 
 @keyframes slider {
   0% {

@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import { fullList, noDimeList } from "../components/helpers/data";
 import { select } from "../components/helpers/toArray";
-import SettingsButton from "./SettingsButton";
-import Card from "./UI/Card";
-import Settings from "./Settings";
+import Settings from "./Pages/Settings";
 import Main from "./Pages/Main";
+import Draw from "./Pages/Draw";
 
 const CategoryList = () => {
   const [category, setCategory] = useState("");
   const [filter, setFilter] = useState(true);
-  const [settings, setSettings] = useState(false);
-  const [draw, setDraw] = useState(false)
-  console.log(filter);
+  const [show, setShow] = useState({
+    draw: false,
+    settings: false,
+    main: true
+  })
+
   const selectHandler = () => {
     if (!filter) {
       const selected = select(fullList);
@@ -26,32 +28,38 @@ const CategoryList = () => {
   };
 
   const settingsHandler = () => {
-    setSettings((prev) => !prev);
     setCategory("");
+    setShow((prev) => ({...prev, settings: !prev.settings, main: !prev.main}));
   };
   const toggleDraw = () => {
     setCategory("");
-    setDraw((prev) => !prev);
+    setShow((prev) => ({...prev, draw: !prev.draw, main: !prev.main}));
   }
+  
 
   return (
     <React.Fragment>
-      {settings ? (
-        <Settings
+      {show.settings === true && (<Settings
           toggleSettings={settingsHandler}
-          settings={settings}
           onFilter={filterHandler}
           filter={filter}
-        />
-      ) : (
-        <Main
+          toggleDraw={toggleDraw}
+        />)}
+      {show.draw === true && (<Draw
           toggleSettings={settingsHandler}
           categoryIs={selectHandler}
           category={category}
           toggleDraw={toggleDraw}
-        />
-      )}
+        />)}
+      {show.main === true && (<Main
+          toggleSettings={settingsHandler}
+          categoryIs={selectHandler}
+          category={category}
+          toggleDraw={toggleDraw}
+        />)}
+        
       
+
     </React.Fragment>
   );
 };

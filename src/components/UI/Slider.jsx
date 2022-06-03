@@ -1,5 +1,5 @@
 import React from "react";
-import "./Slider.css";
+import "./Slider.css"
 
 const Slider = (props) => {
   const {filter, onFilter} = props
@@ -7,7 +7,6 @@ const Slider = (props) => {
     <label className="switch">
       <input type="checkbox" checked={filter} onChange={onFilter}/>
       <span className="slider">{filter ? <p className="all">all categories</p> : <p className="noRepeats">no repeats</p>}</span>
-      
     </label>
   );
 };

@@ -8,13 +8,13 @@
 @keyframes ru {
   from {
     background-color:var(--purple-pl);
-    background-image: url(../assets/rup-removebg-preview.png);
+    background-image: url(../../assets/rup-removebg-preview.png);
     background-position-y: 15rem;
     background-position-x: -6rem;
   }
   to {
     background-color:var(--purple-dk);
-    background-image: url(../assets/rup-removebg-preview.png);
+    background-image: url(../../assets/rup-removebg-preview.png);
     background-position-y: 15rem;
     background-position-x: -20rem;
   }
