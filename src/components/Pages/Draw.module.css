@@ -1,0 +1,27 @@
+.backdrop {
+  background-image: url(../../assets/huntress.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+    background-position-y: 15rem;
+    background-position-x: -4rem;
+    animation-name: ru;
+    animation-duration: 4s;
+    background-color:var(--green);
+}
+
+@keyframes ru {
+  from {
+    background-color:var(--purple-dk);
+    background-image: url(../../assets/huntress.png);
+    background-position-y: 15rem;
+    background-position-x: -30rem;
+  }
+  to {
+    background-color:var(--green);
+    background-image: url(../../assets/huntress.png);
+    background-position-y: 15rem;
+    background-position-x: -4rem;
+
+  }
+  
+}

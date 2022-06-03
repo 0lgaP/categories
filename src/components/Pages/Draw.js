@@ -2,12 +2,13 @@ import React from 'react'
 import Card from '../UI/Card'
 import ButtonContainer from '../UI/ButtonContainer'
 import Button from '../UI/Button'
+import styles from "./Draw.module.css"
 
 const Draw = (props) => {
   const {toggleSettings, categoryIs, toggleDraw, category} = props
 
   return (
-    <Card>
+    <Card styles={styles.backdrop}>
     <ButtonContainer>
       <Button onClick={toggleDraw} draw="true"/>
       <Button onClick={toggleSettings} setting="true"/>

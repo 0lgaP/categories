@@ -5,3 +5,6 @@
   color: var(--yellow);
   font-size: 2rem;
 }
+.symbol:hover {
+  color: var(--pink-pl);
+}
