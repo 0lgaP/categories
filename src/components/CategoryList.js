@@ -4,12 +4,14 @@ import { select } from "../components/helpers/toArray";
 import SettingsButton from "./SettingsButton";
 import Card from "./UI/Card";
 import Settings from "./Settings";
+import Main from "./Pages/Main";
 
 const CategoryList = () => {
   const [category, setCategory] = useState("");
   const [filter, setFilter] = useState(true);
-  const [settings, setSettings] = useState(false)
-  console.log(filter)
+  const [settings, setSettings] = useState(false);
+  const [draw, setDraw] = useState(false)
+  console.log(filter);
   const selectHandler = () => {
     if (!filter) {
       const selected = select(fullList);
@@ -24,24 +26,33 @@ const CategoryList = () => {
   };
 
   const settingsHandler = () => {
-    setSettings((prev) => !prev)
-    setCategory("")
+    setSettings((prev) => !prev);
+    setCategory("");
+  };
+  const toggleDraw = () => {
+    setCategory("");
+    setDraw((prev) => !prev);
   }
-
 
   return (
     <React.Fragment>
-      {settings ? (<Settings toggleSettings={settingsHandler} settings={settings} onFilter={filterHandler} filter={filter}/>) : 
-      <Card>
-        <SettingsButton toggleSettings={settingsHandler}/>
-        <button onClick={selectHandler} className="button">
-          CATEGORY IS
-        </button>
-        <div className="category">{category}</div>
-      </Card>
-      }
-      </React.Fragment>
-
+      {settings ? (
+        <Settings
+          toggleSettings={settingsHandler}
+          settings={settings}
+          onFilter={filterHandler}
+          filter={filter}
+        />
+      ) : (
+        <Main
+          toggleSettings={settingsHandler}
+          categoryIs={selectHandler}
+          category={category}
+          toggleDraw={toggleDraw}
+        />
+      )}
+      
+    </React.Fragment>
   );
 };
 
