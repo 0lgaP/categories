@@ -1,23 +1,23 @@
-.card{
-  background-color: var(--purple-dk);
-  background-image: none;
+.backdrop{
+  background-color: var(--purple-pl);
+  background-image:  url(../../assets/rup-removebg-preview.png);
   animation-name: ru;
   animation-duration: 4s;
 }
 
 @keyframes ru {
   from {
+    background-color:var(--grey-lt);
+    background-image: url(../../assets/rup-removebg-preview.png);
+    background-position-y: 15rem;
+    background-position-x: -20rem;
+    
+  }
+  to {
     background-color:var(--purple-pl);
     background-image: url(../../assets/rup-removebg-preview.png);
     background-position-y: 15rem;
     background-position-x: -6rem;
-    
-  }
-  to {
-    background-color:var(--purple-dk);
-    background-image: url(../../assets/rup-removebg-preview.png);
-    background-position-y: 15rem;
-    background-position-x: -20rem;
   }
   
 }

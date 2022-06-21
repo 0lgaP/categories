@@ -1,26 +1,28 @@
 .backdrop {
-  background-image: url(../../assets/huntress.png);
+  background-image: url(../../assets/Huntress-smoke.png);
   background-repeat: no-repeat;
   background-size: 300px;
-    background-position-y: 15rem;
-    background-position-x: -4rem;
-    animation-name: ru;
-    animation-duration: 4s;
-    background-color:var(--green);
+  background-position-y: -23rem;
+  background-position-x: -25rem;
+  animation-name: ru;
+  animation-duration: 4s;
+  background-color:var(--grey-lt);
+  background-size: 1000px;
 }
 
 @keyframes ru {
   from {
     background-color:var(--purple-dk);
-    background-image: url(../../assets/huntress.png);
-    background-position-y: 15rem;
-    background-position-x: -30rem;
+    background-image: transparent;
+    background-position-y: -23rem;
+    background-position-x: -50rem;
+
   }
   to {
-    background-color:var(--green);
-    background-image: url(../../assets/huntress.png);
-    background-position-y: 15rem;
-    background-position-x: -4rem;
+    background-color:var(--grey-lt);
+    background-image: url(../../assets/Huntress-smoke.png);
+    background-position-y: -23rem;
+    background-position-x: -25rem;
 
   }
   
