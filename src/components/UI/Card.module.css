@@ -1,8 +1,8 @@
+
 .card {
-  width: 20rem;
-  height: 40rem;
+  width: 40vw;
+  height: 90vh;
   display: flex;
-  margin: 2rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -15,6 +15,7 @@
   background-position-x: -6rem;
   animation-name: ru;
   animation-duration: 4s;
+  position:absolute;
 }
 
 @keyframes ru {

@@ -18,23 +18,33 @@ import fred from '../../assets/icons/fred_icon.png'
 
 
 
-const Draw = (props) => {
-  const {toggleSettings, toggleDraw} = props
+// const Draw = (props) => {
+//   const {toggleSettings, toggleDraw} = props
+
+//   return (
+//     <Card styles={styles.backdrop}>
+//     <ButtonContainer>
+//       <Button onClick={toggleDraw} main="true"/>
+//       <Button onClick={toggleSettings} setting="true"/>
+//     </ButtonContainer>
+//     <DrawButtonContainer>
+//     <DownloadButton title="Huntress" img={hunt} drawing={Huntress}/>
+//     <DownloadButton title="Fred" img={fred} drawing={Freddy}/>
+
+
+
+//     </DrawButtonContainer>
+//   </Card>
+//   )
+// }
+
+const Draw = () => {
+
 
   return (
-    <Card styles={styles.backdrop}>
-    <ButtonContainer>
-      <Button onClick={toggleDraw} main="true"/>
-      <Button onClick={toggleSettings} setting="true"/>
-    </ButtonContainer>
-    <DrawButtonContainer>
-    <DownloadButton title="Huntress" img={hunt} drawing={Huntress}/>
-    <DownloadButton title="Fred" img={fred} drawing={Freddy}/>
-
-
-
-    </DrawButtonContainer>
-  </Card>
+    <Card>
+<h1 className={styles.test}>Draw</h1>
+</Card>
   )
 }
 

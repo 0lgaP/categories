@@ -13,23 +13,15 @@
   
 }
 body {
-
   font-family: "Catamaran", sans-serif;
-  /* background-color: orangered; */
-  /* line-height: 1.7; */
-  display: flex;
-  width: 100%;
-  height:100%;
+  display:flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin-top: 2rem;
 }
 html {
-  height: 100%;
   background-color: purple;
   background-image: url(../src/assets/brick-wall.png);
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
 
@@ -55,9 +47,18 @@ html {
   --grey-dk: rgb(23, 23, 35);
   --perk-pl: rgb(92, 35, 112);
   --perk-white: rgb(249, 249, 247);
+}
 
-
-
-
+main {
+  display: flex;
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  position:absolute;
 }
 

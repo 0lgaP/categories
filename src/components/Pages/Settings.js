@@ -11,10 +11,10 @@ const Settings = (props) => {
   return (
     <React.Fragment>
     <Card styles={styles.card}>
-    <ButtonContainer>
+    {/* <ButtonContainer>
     <Button onClick={toggleDraw} draw="true"/>
     <Button onClick={toggleSettings} setting="true"/>
-    </ButtonContainer>
+    </ButtonContainer> */}
     <Slider filter={filter} onFilter={onFilter}/>
     </Card>
     </React.Fragment>

@@ -7,17 +7,9 @@ import styles from './Main.module.css'
 
 
 const Main = (props) => {
-  const {toggleSettings, categoryIs, toggleDraw, category} = props
   return (
     <Card styles={styles.backdrop}>
-      <ButtonContainer>
-        <Button onClick={toggleDraw} draw="true"/>
-        <Button onClick={toggleSettings} setting="true"/>
-      </ButtonContainer>
-      <button onClick={categoryIs} className="button">
-        CATEGORY IS
-      </button>
-      <div className='category'>{category}</div>
+      <h1 className={styles.content}>MAIN</h1>
     </Card>
   )
 }
