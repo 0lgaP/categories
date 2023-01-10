@@ -6,7 +6,7 @@ const DownloadButton = (props) => {
   const {title, img, drawing} = props
   return (
     <a href={drawing} download aria-label={title} 
-    className={styles.button} 
+    className={styles.button_download} 
     style={{backgroundImage:`url(${img})`, 
     backgroundPosition: 'center',
     backgroundSize: '70px',

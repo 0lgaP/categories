@@ -1,17 +1,4 @@
 
-main {
-  /* background-color: yellow; */
-  /* width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: auto; */
-
-}
-
-
 .container-switch {
   width: 100%;
   height: 2rem;
@@ -53,8 +40,9 @@ img {
   background-color: var(--purple-pl);
   background-image: url("../src/assets/button.jpeg");
   color:var(--yellow);
+  width: 15rem;
+  height: 4rem;
   text-shadow: 3px 2px 1px var(--pink-rd);
-  scale: 0.5;
   translate: 0.5;
   box-shadow: 0 9px var(--purple-dk);
 }
