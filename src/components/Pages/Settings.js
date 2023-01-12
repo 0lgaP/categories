@@ -10,13 +10,13 @@ const Settings = (props) => {
   const { toggleSettings, toggleDraw, onFilter, filter} = props;
   return (
     <React.Fragment>
-    <Card styles={styles.card}>
+
     {/* <ButtonContainer>
     <Button onClick={toggleDraw} draw="true"/>
     <Button onClick={toggleSettings} setting="true"/>
     </ButtonContainer> */}
     <Slider filter={filter} onFilter={onFilter}/>
-    </Card>
+
     </React.Fragment>
   )
 }

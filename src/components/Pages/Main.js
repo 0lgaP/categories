@@ -8,9 +8,9 @@ import styles from './Main.module.css'
 
 const Main = (props) => {
   return (
-    <Card styles={styles.backdrop}>
+
       <h1 className={styles.content}>MAIN</h1>
-    </Card>
+
   )
 }
 

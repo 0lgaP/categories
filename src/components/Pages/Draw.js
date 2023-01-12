@@ -42,9 +42,9 @@ const Draw = () => {
 
 
   return (
-    <Card>
+
 <h1 className={styles.test}>Draw</h1>
-</Card>
+
   )
 }
 
