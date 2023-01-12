@@ -447,4 +447,9 @@ const noDimeList = s1a.concat(
   s14a
 );
 
-export { fullList, noDimeList };
+const select = (arr) => {
+  let index = Math.floor(Math.random() * arr.length)
+  return arr[index]
+}
+
+export { fullList, noDimeList, select };

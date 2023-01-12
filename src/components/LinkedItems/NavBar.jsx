@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './NavBar.module.css'
 import { Link } from 'react-router-dom'
-import Card from '../UI/Card'
 
+// Link takes an onClick
 const NavBar = () => {
   return (
     <nav className={styles.navBar}>

@@ -26,11 +26,6 @@ html {
   position:absolute;
 }
 html, body { height: 100%; overflow: hidden}
-/* /* html { */
-  /* height: 100vh; */
-  /* display:flex;
-  justify-content: center;
-  align-content: center; */
 
 /* css variable declerarion */
 :root {
@@ -53,18 +48,5 @@ html, body { height: 100%; overflow: hidden}
   --grey-dk: rgb(23, 23, 35);
   --perk-pl: rgb(92, 35, 112);
   --perk-white: rgb(249, 249, 247);
-}
-
-main {
-  display: flex;
-  width: 40vw;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 2rem;
-  position:absolute;
 }
 
