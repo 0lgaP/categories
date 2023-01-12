@@ -37,8 +37,7 @@ img {
   box-shadow: 0 9px var(--purple-dk);
 }
 .button:hover {
-  background-color: var(--purple-pl);
-  background-image: url("../src/assets/button.jpeg");
+  background-color: var(--blue-dk);
   color:var(--yellow);
   width: 15rem;
   height: 4rem;
@@ -48,7 +47,7 @@ img {
 }
 
 .button:active {
-  background-color: #3e8e41;
+  background-color: var(--blue-dk);
   box-shadow: 0 5px var(--purple-dk);
   transform: translateY(4px);
 }
