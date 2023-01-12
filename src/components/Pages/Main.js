@@ -1,26 +1,29 @@
-import React from 'react'
-import Card from '../UI/Card'
-import styles from './Main.module.css'
-import {TfiHandPointUp} from 'react-icons/tfi'
-
-
+import React from "react";
+import Card from "../UI/Card";
+import styles from "./Main.module.css";
+import { TfiHandPointUp } from "react-icons/tfi";
 
 const Main = (props) => {
-  const {category, setCategory, filter} = props
+  const { category, setCategory, filter } = props;
   const noCategory = (
-  <div className='category'>
-    <TfiHandPointUp /> 
-    </div>)
+    <div className="category">
+      <TfiHandPointUp />
+    </div>
+  );
   return (
     <>
       <button onClick={setCategory} className="button">
         CATEGORY IS
       </button>
-      <div className='speech__bubble'>
-      <div className='category'>{category ? category : noCategory}</div>
+      <div className="speech__container">
+        <div className="speech__bubble">
+          <div className="category">{category ? category : noCategory}</div>
+        </div>
+        <div className="speech__triangle"/>
+        <div className="speech__triangle_2"/>
       </div>
-      </>
-  )
-}
+    </>
+  );
+};
 
-export default Main
+export default Main;
