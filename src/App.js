@@ -11,15 +11,14 @@ function App() {
   
   return (
     <Router>
-      <main>
+      <Card>
       <NavBar/>
         <Routes>
           <Route exact path="/" element={<CategoryList/>}/>
           <Route path="/draw" element={<Draw/>}/>
           <Route path="/settings" element={<Settings/>}/>
         </Routes>
-
-        </main>
+        </Card>
     </Router>
   );
 }

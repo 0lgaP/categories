@@ -1,12 +1,12 @@
 
 .card {
   width: 40vw;
+  min-width: 400px;
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
   border-radius: 2rem;
   background-color: var(--purple-pl);
   background-image: url(../../assets/rup-removebg-preview.png);
@@ -15,7 +15,8 @@
   background-position-x: -6rem;
   animation-name: ru;
   animation-duration: 4s;
-  position:absolute;
+  margin:auto;
+  position:relative;
 }
 
 @keyframes ru {

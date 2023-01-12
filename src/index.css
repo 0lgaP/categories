@@ -13,19 +13,25 @@
   
 }
 body {
+  margin: auto;
   font-family: "Catamaran", sans-serif;
   display:flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-}
-html {
+  width: 100vw;
   background-color: purple;
   background-image: url(../src/assets/brick-wall.png);
-  justify-content: center;
-  align-content: center;
-
 }
+html {
+  position:absolute;
+}
+html, body { height: 100%; overflow: hidden}
+/* /* html { */
+  /* height: 100vh; */
+  /* display:flex;
+  justify-content: center;
+  align-content: center; */
+
 /* css variable declerarion */
 :root {
   --green: rgb(108, 205, 185);
