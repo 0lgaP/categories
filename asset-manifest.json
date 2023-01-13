@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/categories/static/css/main.58b83907.css",
-    "main.js": "/categories/static/js/main.c6c37105.js",
+    "main.css": "/categories/static/css/main.cf7ab2b7.css",
+    "main.js": "/categories/static/js/main.064a984a.js",
     "static/js/787.0e51c9d6.chunk.js": "/categories/static/js/787.0e51c9d6.chunk.js",
+    "static/media/Huntress-smoke.png": "/categories/static/media/Huntress-smoke.51f930a444c2cf719b48.png",
     "static/media/rup-removebg-preview.png": "/categories/static/media/rup-removebg-preview.977792fceb0d79447ee7.png",
+    "static/media/Freddy.jpg": "/categories/static/media/Freddy.311d52ddeadae81d0c43.jpg",
+    "static/media/Huntress.jpg": "/categories/static/media/Huntress.b307732d86529b18513f.jpg",
+    "static/media/Tony.jpg": "/categories/static/media/Tony.041ede693c959bd97aaf.jpg",
+    "static/media/Wraith.jpg": "/categories/static/media/Wraith.42455c63308fbd6c4595.jpg",
+    "static/media/Spirit.jpg": "/categories/static/media/Spirit.fac4c82fa6e1473f7526.jpg",
+    "static/media/spir_icon.png": "/categories/static/media/spir_icon.1d61a626040493824a4f.png",
+    "static/media/fred_icon.png": "/categories/static/media/fred_icon.91f5b84cc9f6c394f740.png",
+    "static/media/hunt_icon.png": "/categories/static/media/hunt_icon.727d8317c18dab5e9f26.png",
     "index.html": "/categories/index.html",
-    "main.58b83907.css.map": "/categories/static/css/main.58b83907.css.map",
-    "main.c6c37105.js.map": "/categories/static/js/main.c6c37105.js.map",
+    "main.cf7ab2b7.css.map": "/categories/static/css/main.cf7ab2b7.css.map",
+    "main.064a984a.js.map": "/categories/static/js/main.064a984a.js.map",
     "787.0e51c9d6.chunk.js.map": "/categories/static/js/787.0e51c9d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58b83907.css",
-    "static/js/main.c6c37105.js"
+    "static/css/main.cf7ab2b7.css",
+    "static/js/main.064a984a.js"
   ]
 }
