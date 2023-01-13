@@ -1,26 +1,21 @@
 import React from "react";
-import Card from "../UI/Card";
+import Button from "../UI/Button";
 import styles from "./Main.module.css";
 import { TfiHandPointUp } from "react-icons/tfi";
 
 const Main = (props) => {
-  const { category, setCategory, filter } = props;
+  const { category, setCategory } = props;
   const noCategory = (
-    <div className="category">
-      <TfiHandPointUp />
-      Click for category
+    <div className={styles.category__text}>
+      <TfiHandPointUp aria-label="finger pointing up" className={styles.icon}/>
     </div>
   );
   return (
     <>
-      <button onClick={setCategory} className="button">
-        CATEGORY IS
-      </button>
-      <div className="speech__container">
-        <div className="speech__bubble">
-          <div className="category">{category ? category : noCategory}</div>
+      <Button onClick={setCategory} text="CATEGORY IS" />
+        <div className={styles.category__container}>
+          <div className={styles.category__text}>{category ? category : noCategory}</div>
         </div>
-      </div>
     </>
   );
 };

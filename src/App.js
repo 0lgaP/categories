@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
-import NavBar from "./components/LinkedItems/NavBar";
+import NavBar from "./components/Nav/NavBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Draw from "./components/Pages/Draw";
 import Settings from "./components/Pages/Settings";
@@ -48,7 +47,7 @@ function App() {
             }
           />
           <Route path="/draw" element={<Draw />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
           <Route
             path="/settings"
             element={<Settings filter={filter} setFilter={filterHandler} />}

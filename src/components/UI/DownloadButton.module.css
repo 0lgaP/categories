@@ -1,19 +1,19 @@
 .button_download {
+  align-items: center;
+  animation-duration: 4s;
+  animation-name: catbutton;
   background-color: var(--perk-pl);
-  width: 5rem;
-  height: 5rem;
   border-radius: 50%;
-  font-size: 1.5rem;
-  font-weight: 900;
+  border: 0.2rem solid var(--perk-white);
   border: none;
   color: var(--perk-white);
-  animation-name: catbutton;
-  animation-duration: 4s;
-  border: 0.2rem solid var(--perk-white);
-  justify-self: center;
   display: flex;
+  font-size: 1.5rem;
+  font-weight: 900;
+  height: 5rem;
   justify-content: center;
-  align-items: center;
+  justify-self: center;
+  width: 5rem;
 }
 
 .icon {
@@ -21,51 +21,47 @@
 }
 
 .download {
-    font-size: 1.7rem;
-    color: var(--perk-white);
-    z-index: 1;
-    margin-top: -0.5rem;
+  color: var(--perk-white);
+  font-size: 1.7rem;
+  margin-top: -0.5rem;
+  z-index: 1;
 }
 
 .button:hover {
-  border: none;
-  color: var(--blood-lt);
+  --btn-raise: 1.3rem;
   background-color: var(--perk-white);
   border-radius: 0;
-  scale: 0.5;
-  translate: 0.5;
+  border: none;
   box-shadow: 0 9px var(--grey-dk);
-  --btn-raise: 1.3rem;
   clip-path: polygon(
     var(--btn-raise) 0%,
     calc(100% - var(--btn-raise)) 0%,
     100% 50%,
     calc(100% - var(--btn-raise)) 100%,
     var(--btn-raise) 100%,
-    0 50%
-  );
+    0 50%);
+  color: var(--blood-lt);
+  scale: 0.5;
+  translate: 0.5;
 }
 
 .button:active {
   background-color: var(--blood-lt);
+  border: none;
   box-shadow: 0 5px var(--purple-dk);
   color: var(--grey-dk);
   transform: translateY(4px);
-  border: none;
 }
-
 
 @keyframes catbutton {
   0% {
     background-color: transparent;
+    box-shadow: 0 9px transparent;
     color: transparent;
     text-shadow: 3px 2px 1px transparent;
-    box-shadow: 0 9px transparent;
   }
   100% {
     background-color: var(--perk-pl);
     color: var(--perk-white);
-
   }
 }
-
