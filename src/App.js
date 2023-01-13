@@ -7,6 +7,7 @@ import Settings from "./components/Pages/Settings";
 import Card from "./components/UI/Card";
 import Main from "./components/Pages/Main";
 import { noDimeList, fullList, select } from "./components/helpers/data";
+import { About } from "./components/Pages/About";
 
 function App() {
   const [category, setCategory] = useState("");
@@ -26,6 +27,10 @@ function App() {
     return (setCategory(selected));
   };
 
+  const filterHandler = () => {
+    setFilter((prev) => !prev);
+  };
+
   return (
     <Router>
       <Card>
@@ -43,9 +48,10 @@ function App() {
             }
           />
           <Route path="/draw" element={<Draw />} />
+          {/* <Route path="/about" element={<About />} /> */}
           <Route
             path="/settings"
-            element={<Settings filter={filter} setFilter={setFilter} />}
+            element={<Settings filter={filter} setFilter={filterHandler} />}
           />
         </Routes>
       </Card>

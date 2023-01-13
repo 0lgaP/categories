@@ -2,7 +2,7 @@
   z-index:1000;
   width: 100%;
   position:relative;
-  background-color: aquamarine;
+  background-color: var(--purple-dk);
   font-size: x-large;
   color:black;
   display: flex;
@@ -10,7 +10,18 @@
   justify-content: center;
   border-radius: 2rem 2rem 0 0;
 }
-.navBar > ul{
+
+.icon_container {
 display: flex;
-gap: 1rem;
+width:100%;
+height: 100%;
+justify-content: space-around;
+align-content: center;
+}
+
+.icon {
+color: var(--yellow);
+font-size: xx-large;
+padding: 10%;
+display:flex;
 }

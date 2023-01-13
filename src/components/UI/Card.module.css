@@ -1,8 +1,8 @@
 
 .card {
-  width: 40vw;
-  min-width: 400px;
+  width: 90vw;
   height: 90vh;
+  min-height:max-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -11,25 +11,28 @@
   background-color: var(--purple-pl);
   background-image: url(../../assets/rup-removebg-preview.png);
   background-repeat: no-repeat;
-  background-position-y: 15rem;
+  background-position-y:bottom;
   background-position-x: -6rem;
   animation-name: ru;
   animation-duration: 4s;
-  margin:auto;
   position:relative;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
 }
 
 @keyframes ru {
   from {
     background-color:var(--purple-dk);
     background-image: url(../../assets/rup-removebg-preview.png);
-    background-position-y: 15rem;
+    background-position-y: bottom;
     background-position-x: -30rem;
   }
   to {
     background-color:var(--purple-pl);
     background-image: url(../../assets/rup-removebg-preview.png);
-    background-position-y: 15rem;
+    background-position-y: bottom;
     background-position-x: -6rem;
 
   }

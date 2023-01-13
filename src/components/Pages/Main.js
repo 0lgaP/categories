@@ -8,6 +8,7 @@ const Main = (props) => {
   const noCategory = (
     <div className="category">
       <TfiHandPointUp />
+      Click for category
     </div>
   );
   return (
@@ -19,8 +20,6 @@ const Main = (props) => {
         <div className="speech__bubble">
           <div className="category">{category ? category : noCategory}</div>
         </div>
-        <div className="speech__triangle"/>
-        <div className="speech__triangle_2"/>
       </div>
     </>
   );
