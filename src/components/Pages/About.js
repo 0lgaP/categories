@@ -1,25 +1,24 @@
 import React from "react";
+import styles from "./About.module.css";
+
+const instruction = [
+  "Download a character from the draw section",
+  "Print or open in your drawing app",
+  "Grab a category",
+  "Draw your fit",
+];
 
 export const About = () => {
   return (
-    <div className="container_about">
-      <div className="">
-      <div className="text__bubble">
-        <div className="title">Instructions</div>
-      </div>
-      </div>
-      <div className="text__bubble">
-        <div className="contents">1. Download a characted from the draw section</div>
-      </div>
-      <div className="text__bubble">
-        <div className="contents">2. Print or open in your drawing app</div>
-      </div>
-      <div className="text__bubble">
-        <div className="contents">3. Grab a category</div>
-      </div>
-      <div className="text__bubble">
-        <div className="contents">4. Draw your fit</div>
-      </div>
-    </div>
+    <>
+      <label className={styles.title}>Instructions</label>
+      <ol className={styles.container_about}>
+        {instruction.map((each) => (
+          <li key={each} className={styles.text__bubble}>
+            {each}
+          </li>
+        ))}
+      </ol>
+    </>
   );
 };

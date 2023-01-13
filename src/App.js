@@ -48,7 +48,7 @@ function App() {
             }
           />
           <Route path="/draw" element={<Draw />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
           <Route
             path="/settings"
             element={<Settings filter={filter} setFilter={filterHandler} />}
