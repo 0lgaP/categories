@@ -1,15 +1,3 @@
-.symbol {
-  margin-top: 0.5rem;
-  width: 5rem;
-  background-color: transparent;
-  color: var(--yellow);
-  font-size: 2rem;
-}
-.symbol:hover {
-  color: var(--pink-pl);
-}
-
-
 .button {
   animation-name: catbutton;
   background-color: var(--yellow);

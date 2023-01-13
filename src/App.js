@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
-import NavBar from "./components/LinkedItems/NavBar";
+import NavBar from "./components/Nav/NavBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Draw from "./components/Pages/Draw";
 import Settings from "./components/Pages/Settings";

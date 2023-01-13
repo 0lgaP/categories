@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asset&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asset&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,18 +10,16 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
 ul {
   list-style: none;
 }
-
 ol {
   list-style: auto;
 }
 body {
   font-family: "Catamaran", sans-serif;
-  position:absolute;
-  display:flex;
+  position: absolute;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -29,9 +27,13 @@ body {
   background-image: url(../src/assets/brick-wall.png);
 }
 html {
-  position:absolute;
+  position: absolute;
 }
-html, body { height: 100%; overflow: hidden}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
 
 /* css variable declerarion */
 :root {
@@ -40,7 +42,7 @@ html, body { height: 100%; overflow: hidden}
   --pink-rd: rgb(224, 127, 138);
   --pink-rdd: rgb(206, 91, 104);
   --pink-pl: rgb(251, 147, 246);
-  --purple-pl: rgb(107,89,163);
+  --purple-pl: rgb(107, 89, 163);
   --purple-dk: rgb(61, 50, 92);
 
   --blue-lt: rgb(132, 210, 222);
@@ -55,4 +57,3 @@ html, body { height: 100%; overflow: hidden}
   --perk-pl: rgb(92, 35, 112);
   --perk-white: rgb(249, 249, 247);
 }
-

@@ -1,0 +1,69 @@
+.switch {
+  background-color: var(--yellow);
+  border-radius: 1rem;
+  display: inline-block;
+  height: 34px;
+  margin-top:2rem;
+  position: relative;
+  width: 130px;
+}
+
+.switch input {
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+
+.slider {
+  animation-duration: 4s;
+  animation-name: slider;
+  background-color: var(--green);
+  border-radius: 1rem;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.8s;
+}
+
+.slider:before {
+  background-color: var(--yellow);
+  border-radius: 1rem;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left:4px;
+  position: absolute;
+  transition: 0.8s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: var(--pink-rd);
+}
+
+input:checked + .slider:before {
+  transform: translateX(95px);
+}
+
+.all {
+  background-color: rgba(0,0,0, 0);
+  color: var(--yellow);
+  font-weight:600;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-top: 5px;
+  transition: 0.8s;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.noRepeats {
+  background-color: rgba(0,0,0, 0);
+  color: var(--yellow);
+  font-weight:600;
+  padding-left: 50px;
+  padding-top: 5px;
+  transition: 0.8s;
+}
