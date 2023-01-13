@@ -1,4 +1,4 @@
-
+/* 
 .container-switch {
   width: 100%;
   height: 2rem;
@@ -8,15 +8,14 @@
   margin-right: 2rem;
   margin-bottom:2rem;
   background-color: rgba(var(--purple-pl), 0);
+} */
 
-}
-
-.container-top {
+/* .container-top {
   align-items: flex-end;
-}
-img {
+} */
+/* img {
   width: 100%;
-}
+} */
 
 .button {
   background-color: var(--yellow);
@@ -30,10 +29,7 @@ img {
   font-family: 'Noto Sans', sans-serif;
   text-shadow: 3px 2px 1px var(--purple-dk);
   animation-name: catbutton;
-  /* animation-duration: 4s; */
   margin-top:2rem;
-
-  /* border: 4px solid var(--yellow); */
   box-shadow: 0 9px var(--purple-dk);
 }
 .button:hover {
@@ -60,19 +56,6 @@ img {
 }
 
 /* Text */
-
-.category {
-  padding:20px;
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.2;
-  color: var(--purple-dk);
-  text-align: center;
-  position: relative;
-}
-
-
-
 
 /* 
 Containers for text */

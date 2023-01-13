@@ -1,11 +1,48 @@
-.content{
-  margin-top:3rem;
-}
+/* General */
 .backdrop{
-  background-color: var(--purple-pl);
-  background-image:  url(../../assets/rup-removebg-preview.png);
   animation-name: ru;
-  animation-duration: 4s;
+}
+.icon {
+  font-size: 5rem;
+}
+
+/* Category Styles */
+.category__container {
+  width: 15rem;
+  height: max-content;
+  background-color: var(--yellow-t);
+  border-radius: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 1px var(--purple-dk);
+  animation: float 2s ease-in-out infinite;
+  display:grid;
+  flex-direction: column;
+}
+
+.category__text {
+  padding:20px;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--purple-dk);
+  text-align: center;
+  position: relative;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 @keyframes ru {

@@ -8,3 +8,45 @@
 .symbol:hover {
   color: var(--pink-pl);
 }
+
+
+.button {
+  animation-name: catbutton;
+  background-color: var(--yellow);
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0 9px var(--purple-dk);
+  color: var(--pink-pl);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  height: 4rem;
+  margin-top:2rem;
+  text-shadow: 3px 2px 1px var(--purple-dk);
+  width: 15rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  background-color: var(--blue-dk);
+  color:var(--yellow);
+  width: 15rem;
+  height: 4rem;
+  text-shadow: 3px 2px 1px var(--pink-rd);
+  translate: 0.5;
+  box-shadow: 0 9px var(--purple-dk);
+}
+
+.button:active {
+  background-color: var(--blue-dk);
+  box-shadow: 0 5px var(--purple-dk);
+  transform: translateY(4px);
+}
+
+.button-toggle {
+  margin: 2rem;
+  padding: 2rem;
+  align-self: flex-start;
+
+}
