@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { fullList, noDimeList } from "../components/helpers/data";
-import { select } from "../components/helpers/toArray";
+import {select, noDimeList, fullList} from "./helpers/data"
 import Settings from "./Pages/Settings";
 import Main from "./Pages/Main";
 import Draw from "./Pages/Draw";

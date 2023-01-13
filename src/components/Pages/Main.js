@@ -1,25 +1,28 @@
-import React from 'react'
-import Card from '../UI/Card'
-import ButtonContainer from '../UI/ButtonContainer'
-import Button from '../UI/Button'
-import styles from './Main.module.css'
-
-
+import React from "react";
+import Card from "../UI/Card";
+import styles from "./Main.module.css";
+import { TfiHandPointUp } from "react-icons/tfi";
 
 const Main = (props) => {
-  const {toggleSettings, categoryIs, toggleDraw, category} = props
+  const { category, setCategory, filter } = props;
+  const noCategory = (
+    <div className="category">
+      <TfiHandPointUp />
+      Click for category
+    </div>
+  );
   return (
-    <Card styles={styles.backdrop}>
-      <ButtonContainer>
-        <Button onClick={toggleDraw} draw="true"/>
-        <Button onClick={toggleSettings} setting="true"/>
-      </ButtonContainer>
-      <button onClick={categoryIs} className="button">
+    <>
+      <button onClick={setCategory} className="button">
         CATEGORY IS
       </button>
-      <div className='category'>{category}</div>
-    </Card>
-  )
-}
+      <div className="speech__container">
+        <div className="speech__bubble">
+          <div className="category">{category ? category : noCategory}</div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Main
+export default Main;

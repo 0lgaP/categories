@@ -1,3 +1,6 @@
+.content{
+  margin-top:3rem;
+}
 .backdrop{
   background-color: var(--purple-pl);
   background-image:  url(../../assets/rup-removebg-preview.png);

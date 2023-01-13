@@ -9,7 +9,11 @@
   background-color:var(--grey-lt);
   background-size: 1000px;
 }
-
+.test {
+  z-index: 10;
+  color:blue;
+  background-color: brown;
+}
 @keyframes ru {
   from {
     background-color:var(--purple-dk);
