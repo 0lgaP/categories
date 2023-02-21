@@ -1,48 +1,48 @@
 import React, { useState, useEffect } from "react";
 
-const Sparkles = () => {
+const Sparkles = ({ sparkleDuration = 500, containerWidth=80, containerHeight=20 }) => {
   const [sparkles, setSparkles] = useState([]);
 
   useEffect(() => {
+    const sparklesToRemove = [];
+
     const sparkleInterval = setInterval(() => {
       const newSparkle = {
-        x: Math.floor(Math.random() * 12),
-        y: Math.floor(Math.random() * 12),
-        size: Math.floor(Math.random() * 3) + 1,
+        x: Math.floor(Math.random() * 10),
+        y: Math.floor(Math.random() * 10),
+        size: Math.floor(Math.random() * 4) + 1,
+        timeoutId: null,
       };
       setSparkles((prevSparkles) => [...prevSparkles, newSparkle]);
 
-      setTimeout(() => {
-        setSparkles((prevSparkles) => prevSparkles.filter((sparkle) => sparkle !== newSparkle));
-      }, 500);
+      newSparkle.timeoutId = setTimeout(() => {
+        setSparkles((prevSparkles) =>
+          prevSparkles.filter((sparkle) => sparkle !== newSparkle)
+        );
+        sparklesToRemove.push(newSparkle);
+      }, sparkleDuration);
     }, 50);
 
     return () => {
       clearInterval(sparkleInterval);
-      sparkles.forEach((sparkle) => clearTimeout(sparkle.timeoutId));
+      sparklesToRemove.forEach((sparkle) => clearTimeout(sparkle.timeoutId));
     };
-  }, [sparkles]);
+  }, [sparkleDuration]);
 
   const cardStyle = {
     position: "relative",
-    width: 120,
-    height: 120,
+    width: containerWidth,
+    height: containerHeight,
     backgroundColor: "transparent",
-    borderRadius: "10px",
-    boxShadow: "0 0 10px #ccc",
-    color: "#444",
+    borderRadius: "2px",
   };
 
   const sparkleStyle = {
     position: "absolute",
-    width: "5px",
-    height: "5px",
     backgroundColor: "#f9f8eb",
-    transform: "rotate(45deg)",
-    transition: "opacity 500ms ease-in-out"
+    transform: "rotate(25deg)",
+    opacity: 0.3,
   };
-  
-  
 
   return (
     <div style={cardStyle}>
@@ -54,13 +54,8 @@ const Sparkles = () => {
           width: `${sparkle.size * 5}px`,
           height: `${sparkle.size * 5}px`,
         };
-        const timeoutId = setTimeout(() => {
-          setSparkles((prevSparkles) => prevSparkles.filter((s) => s !== sparkle));
-        }, 2000);
-        sparkle.timeoutId = timeoutId;
         return <div key={index} style={style} />;
       })}
-      
       Sparkles
     </div>
   );
