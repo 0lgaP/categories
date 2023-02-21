@@ -4,6 +4,7 @@
 }
 .icon {
   font-size: 5rem;
+  background-color: blue;
 }
 
 /* Category Styles */
@@ -22,6 +23,15 @@
   flex-direction: column;
 }
 
+.category__text {
+  padding:20px;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--purple-dk);
+  text-align: center;
+  position: relative;
+}
 .category__text {
   padding:20px;
   font-size: 2rem;
