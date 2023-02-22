@@ -2,22 +2,34 @@ import React from "react";
 import Button from "../UI/Button";
 import styles from "./Main.module.css";
 import { TfiHandPointUp } from "react-icons/tfi";
-import Sparkles from "../UI/Sparkles"
+import Sparkles from "../UI/Sparkles";
+import GlitterContainer from "../UI/GlitterContainer";
+import SparkleEffect from "../UI/Sparkle__Effect";
+import CardSparkles from "../UI/CardSparkles";
 
 const Main = (props) => {
   const { category, setCategory } = props;
   const noCategory = (
-    <div className={styles.noCategory__text}>
-      <TfiHandPointUp aria-label="finger pointing up" className={styles.icon}/>
-    </div>
+    <>
+      <div className={styles.noCategory__container}>
+        <TfiHandPointUp
+          aria-label="finger pointing to cattegory button"
+          className={styles.icon}
+        />
+      </div>
+    </>
+  );
+  const hasCategory = (
+
+    <CardSparkles category={category}/>
+
   );
   return (
     <>
-    <Sparkles></Sparkles>
       <Button onClick={setCategory} text="CATEGORY IS" />
-        <div className={styles.category__container}>
-          <div className={styles.category__text}>{category ? category : noCategory}</div>
-        </div>
+      <div className={styles.category__text}>
+        {category ? hasCategory : noCategory}
+      </div>
     </>
   );
 };

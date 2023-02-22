@@ -23,13 +23,13 @@
 }
 
 @keyframes ru {
-  from {
+  0%{
     background-color:var(--purple-dk);
     background-image: url(../../assets/rup-removebg-preview.png);
     background-position-y: bottom;
     background-position-x: -30rem;
   }
-  to {
+  100% {
     background-color:var(--purple-pl);
     background-image: url(../../assets/rup-removebg-preview.png);
     background-position-y: bottom;
@@ -37,4 +37,24 @@
 
   }
   
+}
+
+.card__sparkle{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 2rem;
+  background-color: blue;
+  position:absolute;
+}
+
+
+@keyframes sparkle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

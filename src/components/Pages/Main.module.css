@@ -4,7 +4,6 @@
 }
 .icon {
   font-size: 5rem;
-  background-color: blue;
 }
 
 /* Category Styles */
@@ -23,15 +22,21 @@
   flex-direction: column;
 }
 
-.category__text {
-  padding:20px;
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.2;
-  color: var(--purple-dk);
-  text-align: center;
-  position: relative;
+.noCategory__container {
+  width: 15rem;
+  height: max-content;
+  background-color:transparent;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float 3.8s ease-in-out infinite;
+  display:grid;
+  opacity: 0.5;
+  flex-direction: column;
 }
+
 .category__text {
   padding:20px;
   font-size: 2rem;
@@ -44,6 +49,18 @@
 
 /* Animations */
 @keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float2 {
   0% {
     transform: translatey(0px);
   }

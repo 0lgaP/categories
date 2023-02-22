@@ -31,8 +31,10 @@ const Sparkles = ({ sparkleDuration = 500, containerWidth=80, containerHeight=20
 
   const cardStyle = {
     position: "relative",
-    width: containerWidth,
-    height: containerHeight,
+    width: "100%",
+    height: "100%",
+    // width: containerWidth,
+    // height: containerHeight,
     backgroundColor: "transparent",
     borderRadius: "2px",
   };
@@ -56,7 +58,6 @@ const Sparkles = ({ sparkleDuration = 500, containerWidth=80, containerHeight=20
         };
         return <div key={index} style={style} />;
       })}
-      Sparkles
     </div>
   );
 };
