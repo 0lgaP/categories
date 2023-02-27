@@ -6,6 +6,8 @@ import Sparkles from "../UI/Sparkles";
 import GlitterContainer from "../UI/GlitterContainer";
 import SparkleEffect from "../UI/Sparkle__Effect";
 import CardSparkles from "../UI/CardSparkles";
+import Glitter from "../UI/Glitter";
+
 
 const Main = (props) => {
   const { category, setCategory } = props;
@@ -16,11 +18,11 @@ const Main = (props) => {
           aria-label="finger pointing to cattegory button"
           className={styles.icon}
         />
+        <Glitter/>
       </div>
     </>
   );
   const hasCategory = (
-
     <CardSparkles category={category}/>
 
   );
