@@ -2,12 +2,7 @@ import React from "react";
 import Button from "../UI/Button";
 import styles from "./Main.module.css";
 import { TfiHandPointUp } from "react-icons/tfi";
-import Sparkles from "../UI/Sparkles";
-import GlitterContainer from "../UI/GlitterContainer";
-import SparkleEffect from "../UI/Sparkle__Effect";
 import CardSparkles from "../UI/CardSparkles";
-import Glitter from "../UI/Glitter";
-
 
 const Main = (props) => {
   const { category, setCategory } = props;
@@ -18,14 +13,10 @@ const Main = (props) => {
           aria-label="finger pointing to cattegory button"
           className={styles.icon}
         />
-        <Glitter/>
       </div>
     </>
   );
-  const hasCategory = (
-    <CardSparkles category={category}/>
-
-  );
+  const hasCategory = <CardSparkles category={category} />;
   return (
     <>
       <Button onClick={setCategory} text="CATEGORY IS" />

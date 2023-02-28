@@ -1,7 +1,6 @@
-
 .category__text {
   z-index: 100;
-  padding:20px;
+  padding: 20px;
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.2;
@@ -10,28 +9,21 @@
   position: relative;
 }
 .category__container {
-    width: 15rem;
-    height: max-content;
-    background-color: var(--yellow-t);
-    border-radius: 2rem;
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 5px 1px var(--purple-dk);
-    animation: float 2s ease-in-out infinite;
-    display:grid;
-    flex-direction: column;
+  width: 15rem;
+  height: max-content;
+  background-color: var(--yellow-t);
+  border-radius: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 1px var(--purple-dk);
+  animation: float 2s ease-in-out infinite;
+  display: grid;
+  flex-direction: column;
 }
 
-.overlay {
-  z-index: 9;
-  margin: 30px;
-  background: #009938;
-}
-
-
-/* Animations */
+/* Animation */
 @keyframes float {
   0% {
     transform: translatey(0px);

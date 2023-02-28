@@ -1,29 +1,22 @@
 import React from "react";
 import "./GlitterContainer.css";
 
-
-// <>
-// <div className={styles.category__container}>
-//   <SparkleEffect />
-//   <div className={styles.category__text}>{category}</div>
-// </div>
-// </>
+import { GiStarShuriken } from "react-icons/gi";
 
 const GlitterContainer = () => {
+  const icon = <GiStarShuriken className="glitter" />;
+
   return (
-
-      <div className="glitter-container">
-        <div className="glitter"></div>
-        <div className="glitter"></div>
-        <div className="glitter"></div>
-        <div className="glitter"></div>
-        <div className="glitter"></div>
-        <div className="glitter"></div>
-        <div className="glitter"></div>
-        <div className="glitter"></div>
-      </div>
-
-
+    <div className="glitter-container">
+      {icon}
+      {icon}
+      {icon}
+      {icon}
+      {icon}
+      {icon}
+      {icon}
+      {icon}
+    </div>
   );
 };
 
