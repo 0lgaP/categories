@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/categories/static/css/main.422b7e2e.css",
-    "main.js": "/categories/static/js/main.70893ce5.js",
+    "main.css": "/categories/static/css/main.450ca4d1.css",
+    "main.js": "/categories/static/js/main.146061fa.js",
     "static/js/787.0e51c9d6.chunk.js": "/categories/static/js/787.0e51c9d6.chunk.js",
     "static/media/Demogorgan.jpg": "/categories/static/media/Demogorgan.8251cbd308ec76525e0b.jpg",
     "static/media/rup-removebg-preview.png": "/categories/static/media/rup-removebg-preview.977792fceb0d79447ee7.png",
@@ -17,12 +17,12 @@
     "static/media/hunt_icon.png": "/categories/static/media/hunt_icon.727d8317c18dab5e9f26.png",
     "static/media/wraith_icon.png": "/categories/static/media/wraith_icon.5f883c8115626e1e2efd.png",
     "index.html": "/categories/index.html",
-    "main.422b7e2e.css.map": "/categories/static/css/main.422b7e2e.css.map",
-    "main.70893ce5.js.map": "/categories/static/js/main.70893ce5.js.map",
+    "main.450ca4d1.css.map": "/categories/static/css/main.450ca4d1.css.map",
+    "main.146061fa.js.map": "/categories/static/js/main.146061fa.js.map",
     "787.0e51c9d6.chunk.js.map": "/categories/static/js/787.0e51c9d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.422b7e2e.css",
-    "static/js/main.70893ce5.js"
+    "static/css/main.450ca4d1.css",
+    "static/js/main.146061fa.js"
   ]
 }
