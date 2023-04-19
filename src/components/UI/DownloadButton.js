@@ -7,10 +7,13 @@ const DownloadButton = (props) => {
   return (
     <a href={drawing} download aria-label={title} 
     className={styles.button_download} 
-    style={{backgroundImage:`url(${img})`, 
+    style={{
+    backgroundImage:`url(${img})`, 
     backgroundPosition: 'center',
     backgroundSize: '70px',
-    backgroundRepeat: 'no-repeat', color:`var(--perk-white)`}}>
+    backgroundRepeat: 'no-repeat', 
+    color:`var(--perk-white)`
+    }}>
     <FiDownload className={styles.icon}/>
     </a>
   )
