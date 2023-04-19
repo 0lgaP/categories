@@ -16,18 +16,31 @@ import oni from "../../assets/icons/oni_icon.png";
 import demo from "../../assets/icons/demo_icon.png";
 import wrai from "../../assets/icons/wraith_icon.png";
 
+import HoverExample from "../UI/HoverCard";
+
+const data = [
+  {
+    "title": "Huntress", 
+    img:hunt,
+    drawing: Huntress,
+  }
+]
 const Draw = () => {
 
+
   return (
+    <>
     <DrawButtonContainer>
+
       <DownloadButton title="Huntress" img={hunt} drawing={Huntress} />
       <DownloadButton title="Fred" img={fred} drawing={Freddy} />
       <DownloadButton title="Spirit" img={spir} drawing={Spirit} />
       <DownloadButton title="Oni" img={oni} drawing={Oni} />
       <DownloadButton title="Demogorgan" img={demo} drawing={Demogorgan} />
       <DownloadButton title="Wraith" img={wrai} drawing={Wraith} />
-
     </DrawButtonContainer>
+<HoverExample />
+    </>
   );
 };
 
